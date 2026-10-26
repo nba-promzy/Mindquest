@@ -49,8 +49,8 @@ button,input{font:inherit}button{cursor:pointer;border:0}button:disabled{opacity
 <main id="quizView" class="main hidden"><div class="quiz-box"><div class="quiz-top"><button id="backToDashboard" class="btn btn-secondary">← Dashboard</button><span class="quiz-progress" id="quizProgress">Question 1</span></div><div class="panel"><p class="muted small" id="quizCategory">SCIENCE CHALLENGE</p><h2 class="question" id="questionText">Question goes here</h2><div class="answers" id="answerOptions"></div><div class="quiz-feedback" id="quizFeedback" aria-live="polite"></div><div class="quiz-bottom"><span class="muted small" id="quizScore">Correct answers: 0</span><button id="nextQuestion" class="btn btn-primary" disabled>Next Question →</button></div></div></div></main>
 <footer class="footer">MindQuest · Learn. Level Up. Lead.</footer></section>
 <script>
-const SUPABASE_URL="PASTE_YOUR_SUPABASE_PROJECT_URL_HERE";
-const SUPABASE_KEY="PASTE_YOUR_SUPABASE_PUBLISHABLE_KEY_HERE";
+const SUPABASE_URL="https://xwahtxmxuwdbigtwwqnw.supabase.co";
+const SUPABASE_KEY="sb_publishable_avUHCpFzqDlg3iQ7AjlE9w_HXqkoIhR";
 let supabaseClient=null,currentUser=null,currentProfile=null,activeChannel=null,authReady=false,loadingProfile=false;
 const $=id=>document.getElementById(id);
 function showNotice(id,msg,type="error"){const e=$(id);e.textContent=msg;e.className="notice show "+type}
